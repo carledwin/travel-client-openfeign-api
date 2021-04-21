@@ -1,0 +1,7 @@
+Application Client
+GET http://localhost:9000/all-bookings
+
+Application Server
+GET http://localhost:8080/bookings
+
+

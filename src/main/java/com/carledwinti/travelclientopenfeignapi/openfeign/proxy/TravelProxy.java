@@ -1,21 +1,20 @@
 package com.carledwinti.travelclientopenfeignapi.openfeign.proxy;
 
-import com.carledwinti.travelclientopenfeignapi.openfeign.TravelFeign;
+import com.carledwinti.travelclientopenfeignapi.openfeign.client.TravelOpenFeignClient;
 import com.carledwinti.travelclientopenfeignapi.openfeign.dto.BookingDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Component
-public class TravelProxy implements TravelFeign {
+public class TravelProxy implements TravelOpenFeignClient {
 
     @Autowired
-    private TravelFeign travelFeign;
+    private TravelOpenFeignClient travelOpenFeignClient;
 
     @Override
     public List<BookingDto> bookings() {
-        return travelFeign.bookings();
+        return travelOpenFeignClient.bookings();
     }
 }

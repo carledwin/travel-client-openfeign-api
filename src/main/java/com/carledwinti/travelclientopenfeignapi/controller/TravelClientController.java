@@ -1,6 +1,5 @@
 package com.carledwinti.travelclientopenfeignapi.controller;
 
-import com.carledwinti.travelclientopenfeignapi.openfeign.TravelFeign;
 import com.carledwinti.travelclientopenfeignapi.openfeign.dto.BookingDto;
 import com.carledwinti.travelclientopenfeignapi.service.TravelService;
 import org.springframework.beans.factory.annotation.Autowired;
